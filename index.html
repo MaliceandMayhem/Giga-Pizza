@@ -6,24 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Giga Pizzeria</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"> <!--lien pour les icônes-->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Rubik+Mono+One&display=swap" rel="stylesheet"> <!--lien pour les polices google-->
 </head>
 <body>
 
 <!--Fond-->
 
-    <img src="img/ivan-torres-MQUqbmszGGM-unsplash.jpg" alt="Pizza tomates cerises" id="fond">
+    <img src="img/banniere.png" alt="Pizza tomates cerises" id="fond">
 
 <!--Barre Menu--> 
 
     <header>
         <nav id="menu">
             <ul>
-                <li class="barre"><a href="#">Menu</a></li>
-                <li class="barre"><a href="#">A Propos</a></li>
+                <li class="barre"><a href="#sectionpizzas">Menu</a></li> <!--ancre pour arriver sur le menu de la page-->
+                <li class="barre"><a href="#services">A Propos</a></li> <!--ancre pour arriver sur la section services du site-->
                 <li class="barre"><a href="#">Blog</a></li>
-                <li class="barre"><a href="#">Contact</a></li>
+                <li class="barre"><a href="#infos">Contact</a></li> <!--ancre pour arriver sur la section infos de la page-->
             </ul>
         </nav>
     </header>
@@ -31,61 +31,67 @@
 <!--Banniere-->
     <div id="banniere">
         <p id="giga">Giga</p>
-        <h1>Pizzeria</h1>
-        <button id="plus">En savoir plus</button>
+        <h1>Pizzeria</h1> <!--J'ai choisis de ne mettre que "pizzeria" en h1 pour le référencement-->
+        <a href="#"><button id="plus">En savoir plus</button></a>
     </div>
 
 <!--Section nouveautes-->
 
     <div id="nouveautes">
-        <img src="img/shaian-ramesht-exSEmuA7R7k-unsplash.jpg" alt="Pizza" id="pizzanouveau">
+        <img src="img/Pizzanouveautes.png" alt="Pizza" id="pizzanouveau">
         <div id="textenouveau">
             <h2 id="titrenouveau">Des nouveautés ?</h2>
-            <p class="paranouveau">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            <br> Nesciunt voluptate cum.</p>
-            <p class="paranouveau">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-            <br>Nesciunt voluptate cum.</p>
-            <p class="paranouveau">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-            <br>Nesciunt voluptate cum.</p>
+            <p class="paranouveau">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptate cum.</p>
+            <p class="paranouveau">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptate cum.</p>
+            <p class="paranouveau">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptate cum.</p>
         </div>
     </div>
 
 <!--Section services-->
 
-    <div>
+    <div id="services">
         <!--titres-->
-        <h3>| nouveau format</h3>
-        <h3>|| masterclass</h3>
-        <h3>||| le restaurant</h3>
+        <h3 id="format">| nouveau format</h3>
+        <h3 id="masterclass">|| masterclass</h3>
+        <h3 id="restaurant">||| le restaurant</h3>
 
         <!--Paragraphes-->
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde cupiditate consectetur, asperiores ipsum quia enim. Pariatur, accusantium rerum quaerat deserunt cupiditate quos tempora magnam tenetur, neque similique recusandae, sit atque.</p>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates nostrum dolorum commodi dignissimos nihil accusantium, tempora at quod perspiciatis vitae cupiditate deleniti consequatur aperiam cumque, delectus veritatis corrupti? Est, porro.</p>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque quo repellat placeat blanditiis accusamus quidem, perspiciatis quos, sit quae amet illo praesentium! Accusantium consequatur laborum consectetur incidunt neque veniam unde.</p>
+        <p id="paraservices1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde cupiditate consectetur, asperiores ipsum quia enim. Pariatur, accusantium rerum quaerat deserunt cupiditate quos tempora magnam tenetur, neque similique recusandae, sit atque.</p>
+        <p id="paraservices2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde cupiditate consectetur, asperiores ipsum quia enim. Pariatur, accusantium rerum quaerat deserunt cupiditate quos tempora magnam tenetur, neque similique recusandae, sit atque.</p>
+        <p id="paraservices3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde cupiditate consectetur, asperiores ipsum quia enim. Pariatur, accusantium rerum quaerat deserunt cupiditate quos tempora magnam tenetur, neque similique recusandae, sit atque.</p>
     </div>
 
 <!--Section Pizzas-->
 
-    <div>
-        <h2>Nos Pizzas</h2>
-        <a href="#"><img src="img/nik-owens-40OJLYVWeeM-unsplash.jpg" alt="Pizza mozzarella"></a>
-        <a href="#"></a><img src="img/nik-owens-40OJLYVWeeM-unsplash.jpg" alt="Pizza mozzarella"></a>
-        <a href="#"></a><img src="img/nik-owens-40OJLYVWeeM-unsplash.jpg" alt="Pizza mozzarella"></a>
+    <div id="sectionpizzas">
+        <h2 id="nospizzas">Nos Pizzas</h2>
+        <a href="#"><img src="img/nospizzas.png" alt="Pizza mozzarella" class="pizzas"></a>
+        <a href="#"><img src="img/nospizzas.png" alt="Pizza mozzarella" class="pizzas"></a>
+        <a href="#"><img src="img/nospizzas.png" alt="Pizza mozzarella" class="pizzas"></a>
     </div>
 
 <!--Section réseaux sociaux / adresse-->
 
-    <div>
-        <img src="img/gabriella-clare-marino-mYK3JCevRTk-unsplash.jpg" alt="façade du restaurant">
-        <p>37 avenue dubuisson</p>
-        <p>69100 Villeurbanne</p>
-        <p>04.04.04.04.04</p>
+    <div id="infos">
+        <img src="img/facaderesto.png" alt="façade du restaurant" id="facade">
+        <p id="adresse">37 avenue dubuisson
+            <br>
+            69100 Villeurbanne
+            <br>
+            <br>
+            04.04.04.04.04
+        </p>
+        <!--Je sais que les "br" ne sont pas idéaux mais faire en sorte que ces infos ne forment qu'un bloc au lieu de trois me paraissait
+        plus optimal pour le CSS.-->
+
+        <!--J'ai choisis de mettre des div pour faciliter l'application des couleurs de fond, des dimensions des différentes sections
+         et pour les positions des éléments absolus sur des div relatives.-->
 
         <nav id="reseaux">
             <ul>
-                <li class="barre"><a href="#"><ion-icon name="logo-instagram" id="picto"></ion-icon></a></li>
-                <li class="barre"><a href="#"><ion-icon name="logo-twitter" id="picto"></ion-icon></a></li>
-                <li class="barre"><a href="#"><ion-icon name="logo-facebook" id="picto"></ion-icon></a></li>
+                <li class="barre"><a href="#"><ion-icon name="logo-instagram" class="picto"></ion-icon></a></li>
+                <li class="barre"><a href="#"><ion-icon name="logo-twitter" class="picto"></ion-icon></a></li>
+                <li class="barre"><a href="#"><ion-icon name="logo-facebook" class="picto"></ion-icon></a></li>
             </ul>
         </nav>
     </div>
@@ -97,11 +103,17 @@
             <ul>
                 <li class="barrepied"><a href="#">mentions légales</a></li>
                 <li class="barrepied">-</li>
-                <li class="barrepied"><a href="#">plan du Site</a></li>
+                <li class="barrepied"><a href="#">plan du site</a></li>
                 <li class="barrepied">-</li>
                 <li class="barrepied"><a href="#">politique de confidentialité</a></li>
             </ul>
         </nav>
     </footer>
+
+
+<!-- import pour les icônes des réseaux sociaux, le site indiquait de mettre les imports juste avant la fin du body-->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 </html>

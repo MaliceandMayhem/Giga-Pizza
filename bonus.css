@@ -1,0 +1,383 @@
+/*
+ref rapides:
+
+    polices du site:
+    font-family: 'Rubik Mono One', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+
+    couleurs du site :
+    jaune moutarde : #EEB41F
+    presque tout noir : #1e1e1e
+    marron du footer : #3E3A35
+*/
+
+body{
+    margin: 0%;
+    padding: 0%;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*image de fond de la bannière*/
+#fond{
+    display: block;
+    position: relative;
+    width: 100%;
+    margin-bottom: 0%; 
+}
+
+/*css de la barre de navigation*/
+#menu{
+    position:absolute;
+    top: 0px;
+    right: 0px;
+    display: block;
+    background-color: #EEB41F;
+    font-family: 'Quicksand', sans-serif;
+    float:right;
+    margin: 0px;
+    padding: 0px;
+    font-weight: 500;
+    text-indent: 20px;
+}
+
+nav li{
+    display: inline-block;
+
+}
+
+nav li a{
+    color: white;
+}
+
+#menu a:hover{
+    color: #3E3A35;
+}
+
+#menu a:active{
+    color: #3E3A35;
+}
+
+/*éléments de la barre de menu*/
+.barre{
+    margin: 0%;
+    padding: 0px;
+    font-size: 25px;
+    padding-right: 50px;
+}
+
+#banniere{
+    display: block;
+    background-color: #EEB41F;
+    position: absolute;
+    top: 250px;
+    width: 100%;
+    min-height: 220px;
+}
+
+#giga{
+    position: absolute;
+    top: 0px;
+    left: 150px;
+    float: left;
+    color: white;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 100px;
+    letter-spacing: 5px;
+}
+
+/*"Pizzeria"*/
+h1{
+    position: absolute;
+    left: 150px;
+    top: 170px;
+    float: left;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 100px;
+    letter-spacing: 20px;
+}
+
+/*bouton "en savoir plus"*/
+#plus{
+    position: absolute;
+    top: 190px;
+    right: 300px;
+    background-color: #EEB41F;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    font-weight: 900;
+    font-size: 30px;
+    padding: 12px 20px;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+/*animation de clic du bouton*/
+#plus:active{
+    transform: translate(0px,5px);
+    -webkit-transform: translate(0px,5px);
+}
+
+
+/*fond noir de la section nouveautés*/
+#nouveautes{
+    display: block;
+    background-color: #1e1e1e;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    margin: 0%;
+    padding-bottom: 150px;
+}
+
+/*image de la section nouveautés*/
+#pizzanouveau{
+    position: absolute;
+    top: 100px;
+    right: 0px;
+    width: 50%;
+    height: 300px;
+}
+
+/*titre de la section nouveauté*/
+#titrenouveau{
+    position: absolute;
+    bottom: 150px;
+    left: 50px;
+    float: left;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 25px;
+    width: 50%;
+    padding-left: 150px;
+    font-weight: 900;
+}
+
+/* les paragraphes de la section nouveautés*/
+.paranouveau{
+    display: block;
+    float: left;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    width: 50%;
+    padding-left: 150px;
+}
+
+#paranouveau3{
+    position: absolute;
+    top: 150px;
+    float: left;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    width: 50%;
+    padding-left: 150px;
+}
+
+/*le texte en vertical juste avant les paragraphes de la section nouveautés*/
+#textevertical{
+    transform: rotate(-90deg);
+    position: absolute;
+    bottom: 33px;
+    float: left;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 27px;
+    font-weight: 100;
+}
+
+/*section de la section nouveautés*/
+#textenouveau{
+    display: block;
+    background-color: #EEB41F;
+    position: absolute;
+    top: 170px;
+    left: 200px;
+    width: 45%;
+    height: 150px;
+}
+
+/*les titres des services proposés par le resto*/
+/*milieu*/
+#masterclass{
+    display:inline-block;
+    color: #EEB41F;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 25px;
+    font-weight: bolder;
+    width: 25%;
+    text-align: left;
+    margin-top: 150px;
+}
+/*gauche*/
+#format{
+    display:inline-block;
+    color: #EEB41F;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 25px;
+    font-weight: bolder;
+    width: 25%;
+    text-align: left;
+    margin-top: 150px;
+    margin-left: 250px;
+}
+/*droite*/
+#restaurant{
+    display:inline-block;
+    color: #EEB41F;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 25px;
+    font-weight: bolder;
+    width: 25%;
+    text-align: left;
+    margin-top: 150px;
+}
+
+/*paragraphes sous les services proposés par le resto*/
+/*milieu*/
+#paraservices2{
+    display:inline-block;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    width: 22%;
+    text-align: left;
+    margin-left: 45px;
+    padding-bottom: 100px;
+}
+/*gauche*/
+#paraservices1{
+    display:inline-block;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    width: 22%;
+    text-align: left;
+    margin-left: 250px;
+    padding-bottom: 100px;
+}
+/*droite*/
+#paraservices3{
+    display:inline-block;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    width: 22%;
+    text-align: left;
+    margin-left: 45px;
+    padding-bottom: 100px;
+}
+
+#sectionpizzas{
+    position: relative;
+    background-color: #1e1e1e;
+    padding-top: 20px;
+    padding-bottom: 800px;
+}
+
+/*titre du menu*/
+#nospizzas{
+    color: white;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 70px;
+    margin-left: 20px;
+    padding-bottom: 70px;
+}
+
+/*images des pizzas au menu*/
+#pizza1{
+    position: absolute;
+    display: inline-block;
+    width: 25%;
+    padding-left: 90px;
+    
+}
+
+#pizza2{
+    position: absolute;
+    top: 300px;
+    display: inline-block;
+    width: 25%;
+    padding-left: 570px;
+    
+}
+
+#pizza3{
+    position: absolute;
+    right: 90px;
+    top: 700px;
+    display: inline-block;
+    width: 25%;
+    padding-left: 90px;
+    
+}
+
+/*section avec la photo de la devanture, l'adresse, le tel, les réseaux*/
+#infos{
+    position: relative;
+    padding-bottom: 150px;
+    padding-top: 100px;
+}
+
+/*image du resto*/
+#facade{
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    margin-left: 100px;
+}
+
+/*adresse + téléphone*/
+#adresse{
+    position: absolute;
+    top: 200px;
+    left: 950px;
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 25px;
+}
+
+/*section des réseaux sociaux*/
+#reseaux{
+    position: absolute;
+    right: 0px;
+    bottom: 200px;
+    background-color: #EEB41F;
+    width: 25%;
+    padding-top: 5px;
+    
+}
+
+/*logos réseaux sociaux*/
+.picto{
+    display: inline-block;
+    font-size: 40px;
+    padding-left: 20px;
+}
+
+#reseaux a:hover{
+    color: #3E3A35;
+}
+
+footer{
+    background-color: #3E3A35;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+footer a:hover{
+    color: #EEB41F;
+}
+
+footer a:active{
+    color: #EEB41F;
+}
