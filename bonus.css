@@ -26,6 +26,9 @@ a{
     position: relative;
     width: 100%;
     margin-bottom: 0%; 
+    /* l'image est en position relative car il y a des éléments à superposer par dessus, comme la barre de navigation et la bannière
+Elle est également en display block car les prochaines div devront aller en dessous
+Le margin-bottome est à 0 pour éviter les espacements avec la div juste en dessous, les deux doivent être collées*/
 }
 
 /*css de la barre de navigation*/
@@ -36,16 +39,17 @@ a{
     display: block;
     background-color: #EEB41F;
     font-family: 'Quicksand', sans-serif;
-    float:right;
     margin: 0px;
     padding: 0px;
     font-weight: 500;
     text-indent: 20px;
+    /*Ma barre de navigation est en position absolue pour pouvoir la placer où je veux sur l'image de fond qui est en position relative,
+c'est à dire, tout en haut à droite*/
 }
 
 nav li{
     display: inline-block;
-
+/*Cela me permet de faire en sorte que mes li se mettent en ligne à l'horizontale*/
 }
 
 nav li a{
@@ -75,6 +79,7 @@ nav li a{
     top: 250px;
     width: 100%;
     min-height: 220px;
+     /*La position est absolue pour pouvoir placer cet élément où je veux sur l'image de fond*/
 }
 
 #giga{
@@ -99,6 +104,7 @@ h1{
     font-family: 'Quicksand', sans-serif;
     font-size: 100px;
     letter-spacing: 20px;
+     /*La position est absolue pour pouvoir placer cet élément où je veux sur l'image de fond*/
 }
 
 /*bouton "en savoir plus"*/
@@ -115,6 +121,7 @@ h1{
     padding: 12px 20px;
     border: 2px solid white;
     cursor: pointer;
+     /*La position est absolue pour pouvoir placer le bouton où je veux sur l'image de fond*/
 }
 
 /*animation de clic du bouton*/
@@ -133,6 +140,8 @@ h1{
     min-height: 400px;
     margin: 0%;
     padding-bottom: 150px;
+     /*La position de cette div est en relative pour que les éléments à l'intérieur (image + div) puissent être placés où je veux
+    par rapport à cette div là.*/
 }
 
 /*image de la section nouveautés*/
@@ -142,6 +151,7 @@ h1{
     right: 0px;
     width: 50%;
     height: 300px;
+    /*La position est absolue pour pouvoir placer cette image où je veux sur la div parent*/
 }
 
 /*titre de la section nouveauté*/
@@ -156,6 +166,7 @@ h1{
     width: 50%;
     padding-left: 150px;
     font-weight: 900;
+    /*La position est absolue pour pouvoir placer ce titre où je veux sur la div parent*/
 }
 
 /* les paragraphes de la section nouveautés*/
@@ -178,6 +189,8 @@ h1{
     font-size: 15px;
     width: 50%;
     padding-left: 150px;
+    /*La position est absolue pour pouvoir placer ce paragraphe où je veux sur la div parent, son espacement avec les autres est plus
+    improtant*/
 }
 
 /*le texte en vertical juste avant les paragraphes de la section nouveautés*/
@@ -190,6 +203,7 @@ h1{
     font-family: 'Quicksand', sans-serif;
     font-size: 27px;
     font-weight: 100;
+    /*La position est absolue pour pouvoir placer ce texte où je veux sur la div parent*/
 }
 
 /*section de la section nouveautés*/
@@ -201,6 +215,7 @@ h1{
     left: 200px;
     width: 45%;
     height: 150px;
+    /*La position est absolue pour pouvoir placer cette div où je veux sur la div parent*/
 }
 
 /*les titres des services proposés par le resto*/
@@ -276,6 +291,8 @@ h1{
     background-color: #1e1e1e;
     padding-top: 20px;
     padding-bottom: 800px;
+    /*La position de cette div est en relative pour que les éléments à l'intérieur (images) puissent être placés où je veux
+    par rapport à cette div là.*/
 }
 
 /*titre du menu*/
@@ -293,7 +310,7 @@ h1{
     display: inline-block;
     width: 25%;
     padding-left: 90px;
-    
+    /*La position est absolue pour pouvoir placer cette image où je veux sur la div parent*/
 }
 
 #pizza2{
@@ -302,7 +319,7 @@ h1{
     display: inline-block;
     width: 25%;
     padding-left: 570px;
-    
+    /*La position est absolue pour pouvoir placer cette image où je veux sur la div parent*/
 }
 
 #pizza3{
@@ -312,7 +329,7 @@ h1{
     display: inline-block;
     width: 25%;
     padding-left: 90px;
-    
+    /*La position est absolue pour pouvoir placer cette image où je veux sur la div parent*/
 }
 
 /*section avec la photo de la devanture, l'adresse, le tel, les réseaux*/
@@ -320,6 +337,8 @@ h1{
     position: relative;
     padding-bottom: 150px;
     padding-top: 100px;
+    /*La position de cette div est en relative pour que les éléments à l'intérieur (image + div) puissent être placés où je veux
+    par rapport à cette div là.*/
 }
 
 /*image du resto*/
@@ -328,6 +347,7 @@ h1{
     display: inline-block;
     width: 50%;
     margin-left: 100px;
+    /*L'image est en position relative pour ne pas gêner le placement des autres éléments dans la même div*/
 }
 
 /*adresse + téléphone*/
@@ -340,6 +360,7 @@ h1{
     text-align: center;
     font-family: 'Quicksand', sans-serif;
     font-size: 25px;
+    /*La position est absolue pour pouvoir placer ce paragraphe où je veux sur la div parent*/
 }
 
 /*section des réseaux sociaux*/
@@ -350,7 +371,7 @@ h1{
     background-color: #EEB41F;
     width: 25%;
     padding-top: 5px;
-    
+    /*La position est absolue pour pouvoir placer cette div où je veux sur la div parent*/
 }
 
 /*logos réseaux sociaux*/

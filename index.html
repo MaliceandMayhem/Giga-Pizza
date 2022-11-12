@@ -24,6 +24,8 @@
                 <li class="barre"><a href="#services">A Propos</a></li> <!--ancre pour arriver sur la section services du site-->
                 <li class="barre"><a href="#">Blog</a></li>
                 <li class="barre"><a href="#infos">Contact</a></li> <!--ancre pour arriver sur la section infos de la page-->
+                <!--J'ai ajouté des ancres car nous ne travaillons qu'avec une seule page, cela me permet de tester les ancres et de
+                voir si mes liens marchent bien.-->
             </ul>
         </nav>
     </header>
@@ -31,16 +33,20 @@
 <!--Banniere-->
     <div id="banniere">
         <p id="giga">Giga</p>
-        <h1>Pizzeria</h1> <!--J'ai choisis de ne mettre que "pizzeria" en h1 pour le référencement-->
+        <h1>Pizzeria</h1> <!--J'ai choisis de ne mettre que "pizzeria" en h1 pour le référencement, les gens auront plus tendance à
+        chercher un terme générique pour ensuite faire leur choix plutôt qu'un nom spécifique, sauf si ils cherchent spécifiquement
+        cette pizzeria là-->
         <a href="#"><button id="plus">En savoir plus</button></a>
     </div>
 
 <!--Section nouveautes-->
-
+<!--Les div me permettent d'appliquer facilement une couleur de fond ainsi que de pouvoir leur attribuer des positions relative/absolue
+pour déplacer les éléments/autres div à l'intérieur-->
     <div id="nouveautes">
         <img src="img/Pizzanouveautes.png" alt="Pizza" id="pizzanouveau">
         <div id="textenouveau">
             <h2 id="titrenouveau">Des nouveautés ?</h2>
+            <!--Ce titre est en h2 car cela aidera au référencement, les nouveautés sont un atout vendeur, de plus il suit après le h1-->
             <p class="paranouveau">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptate cum.</p>
             <p class="paranouveau">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptate cum.</p>
             <p class="paranouveau">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptate cum.</p>
@@ -54,6 +60,7 @@
         <h3 id="format">| nouveau format</h3>
         <h3 id="masterclass">|| masterclass</h3>
         <h3 id="restaurant">||| le restaurant</h3>
+        <!--Ces titres sont en h3 pour également aider au réfèrencement, ils suivent après le h2-->
 
         <!--Paragraphes-->
         <p id="paraservices1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde cupiditate consectetur, asperiores ipsum quia enim. Pariatur, accusantium rerum quaerat deserunt cupiditate quos tempora magnam tenetur, neque similique recusandae, sit atque.</p>
@@ -65,6 +72,8 @@
 
     <div id="sectionpizzas">
         <h2 id="nospizzas">Nos Pizzas</h2>
+        <!--Ce titre est en h2 car les pizzas sont sans doute la chose la plus importante dans une pizzeria, un nouveau h2 me
+        paraissait approprié-->
         <a href="#"><img src="img/nospizzas.png" alt="Pizza mozzarella" class="pizzas"></a>
         <a href="#"><img src="img/nospizzas.png" alt="Pizza mozzarella" class="pizzas"></a>
         <a href="#"><img src="img/nospizzas.png" alt="Pizza mozzarella" class="pizzas"></a>
@@ -83,9 +92,6 @@
         </p>
         <!--Je sais que les "br" ne sont pas idéaux mais faire en sorte que ces infos ne forment qu'un bloc au lieu de trois me paraissait
         plus optimal pour le CSS.-->
-
-        <!--J'ai choisis de mettre des div pour faciliter l'application des couleurs de fond, des dimensions des différentes sections
-         et pour les positions des éléments absolus sur des div relatives.-->
 
         <nav id="reseaux">
             <ul>
@@ -111,7 +117,8 @@
     </footer>
 
 
-<!-- import pour les icônes des réseaux sociaux, le site indiquait de mettre les imports juste avant la fin du body-->
+<!-- import pour les icônes des réseaux sociaux, le site indiquait de mettre les imports juste avant la fin du body, j'ai donc
+respecté leur recommandation-->
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
