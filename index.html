@@ -13,30 +13,39 @@
 
 <!--Fond-->
 
-    <img src="img/banniere.png" alt="Pizza tomates cerises" id="fond">
+    <img src="img/banniere.png" alt="Pizza tomates cerises" id="fond"> 
+    <!--Ceci est l'image de fond de la bannière du site, je l'appelle en premier pour éviter les conflits avec les autres éléments.
+    Je lui ai attribué un texte alternatif pour qu'il soit lu aux personnes malvoyantes et pour aider au réfèrencement et un "id"
+pour lui appliquer des caractéristiques sur la feuille de style. Elle a un set d'attributs css propre à elle, d'où le "id" et non une classe.
+C'est également ce que j'ai fais avec les autres images du site, je les appelle en premier dans la div à laquelle elles appartiennent
+et je leur applique un texte alternatif et un id pour les même raisons.-->
 
-<!--Barre Menu--> 
+ <!--Barre Menu--> 
 
     <header>
-        <nav id="menu">
+        <nav id="menu"><!--La nav me sert à faire la barre de navigation-->
             <ul>
                 <li class="barre"><a href="#sectionpizzas">Menu</a></li> <!--ancre pour arriver sur le menu de la page-->
                 <li class="barre"><a href="#services">A Propos</a></li> <!--ancre pour arriver sur la section services du site-->
-                <li class="barre"><a href="#">Blog</a></li>
+                <li class="barre"><a href="#">Blog</a></li> <!--Ce lien n'a pas d'ancre car rien ne correspondait sur la page.
+                Si il y avait une page "blog" dans ce cas le "#" serait remplacé par le lien de la page-->
                 <li class="barre"><a href="#infos">Contact</a></li> <!--ancre pour arriver sur la section infos de la page-->
                 <!--J'ai ajouté des ancres car nous ne travaillons qu'avec une seule page, cela me permet de tester les ancres et de
                 voir si mes liens marchent bien.-->
+                <!--Les "li" ont la classe "barre" pour pouvoir y faire référence dans la feuille CSS et leur appliquer des changements groupés-->
             </ul>
         </nav>
     </header>
     
 <!--Banniere-->
-    <div id="banniere">
-        <p id="giga">Giga</p>
+    <div id="banniere"> <!--J'ai ajouté un "id" à cette div pour y appliquer des changements dans ma feuille de style, notemment la couleur
+    de fond et la position. J'ai choisis un "id" car cette div aura des particularités propres à elle, tout comme mes autres div-->
+        <p id="giga">Giga</p> <!---->
         <h1>Pizzeria</h1> <!--J'ai choisis de ne mettre que "pizzeria" en h1 pour le référencement, les gens auront plus tendance à
         chercher un terme générique pour ensuite faire leur choix plutôt qu'un nom spécifique, sauf si ils cherchent spécifiquement
         cette pizzeria là-->
-        <a href="#"><button id="plus">En savoir plus</button></a>
+        <a href="#"><button id="plus">En savoir plus</button></a> <!--Le bouton est enveloppé d'un lien pour que l'on puisse cliquer sur tout
+        le bouton pour aller vers la page pertinente. Il ne renvoit à rien ici car la page n'existe pas, le "#" remplace l'adresse de la page-->
     </div>
 
 <!--Section nouveautes-->
@@ -60,12 +69,14 @@ pour déplacer les éléments/autres div à l'intérieur-->
         <h3 id="format">| nouveau format</h3>
         <h3 id="masterclass">|| masterclass</h3>
         <h3 id="restaurant">||| le restaurant</h3>
-        <!--Ces titres sont en h3 pour également aider au réfèrencement, ils suivent après le h2-->
+        <!--Ces titres sont en h3 pour également aider au réfèrencement, ils suivent après le h2 et promeuvent les qualités et 
+        services du restaurant.-->
 
         <!--Paragraphes-->
         <p id="paraservices1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde cupiditate consectetur, asperiores ipsum quia enim. Pariatur, accusantium rerum quaerat deserunt cupiditate quos tempora magnam tenetur, neque similique recusandae, sit atque.</p>
         <p id="paraservices2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde cupiditate consectetur, asperiores ipsum quia enim. Pariatur, accusantium rerum quaerat deserunt cupiditate quos tempora magnam tenetur, neque similique recusandae, sit atque.</p>
         <p id="paraservices3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde cupiditate consectetur, asperiores ipsum quia enim. Pariatur, accusantium rerum quaerat deserunt cupiditate quos tempora magnam tenetur, neque similique recusandae, sit atque.</p>
+            <!--Ces paragraphes ont un id chacun car certaines caractéristiques (au niveau du positionnement) leurs sont propres-->
     </div>
 
 <!--Section Pizzas-->
@@ -77,6 +88,7 @@ pour déplacer les éléments/autres div à l'intérieur-->
         <a href="#"><img src="img/nospizzas.png" alt="Pizza mozzarella" class="pizzas"></a>
         <a href="#"><img src="img/nospizzas.png" alt="Pizza mozzarella" class="pizzas"></a>
         <a href="#"><img src="img/nospizzas.png" alt="Pizza mozzarella" class="pizzas"></a>
+        <!--La position en dessous du titre ne gêne pas avec ces images là, cela ne pose pas de conflits au niveau du positionnement-->
     </div>
 
 <!--Section réseaux sociaux / adresse-->
@@ -93,11 +105,14 @@ pour déplacer les éléments/autres div à l'intérieur-->
         <!--Je sais que les "br" ne sont pas idéaux mais faire en sorte que ces infos ne forment qu'un bloc au lieu de trois me paraissait
         plus optimal pour le CSS.-->
 
-        <nav id="reseaux">
+        <nav id="reseaux"> <!--J'ai choisis une nav ici pour créer une mini barre de navigation pour les réseaux sociaux-->
             <ul>
                 <li class="barre"><a href="#"><ion-icon name="logo-instagram" class="picto"></ion-icon></a></li>
                 <li class="barre"><a href="#"><ion-icon name="logo-twitter" class="picto"></ion-icon></a></li>
                 <li class="barre"><a href="#"><ion-icon name="logo-facebook" class="picto"></ion-icon></a></li>
+                <!--Ces li font également partis de la classe "barre" car elles partagent les caractéristiques css des li de la
+                barre de menu principal.
+                La classe "picto" est appliquée aux icônes pour pouvoir en changer les caractéristiques via la feuille de style-->
             </ul>
         </nav>
     </div>
@@ -105,20 +120,23 @@ pour déplacer les éléments/autres div à l'intérieur-->
 <!-- Le Footer-->
 
     <footer>
-        <nav id="pied">
+        <nav id="pied"> <!--Une nouvelle barre de navigation pour le footer, je traite les liens en bas de page comme un menu-->
             <ul>
                 <li class="barrepied"><a href="#">mentions légales</a></li>
-                <li class="barrepied">-</li>
+                <li class="barrepied">-</li> <!--les tirets sont leur propres li pour faire en sorte qu'ils ne fassent pas partie
+                des liens et que leur couleur ne changent pas au survol de la souris-->
                 <li class="barrepied"><a href="#">plan du site</a></li>
                 <li class="barrepied">-</li>
                 <li class="barrepied"><a href="#">politique de confidentialité</a></li>
+                <!--Ces li font parti d'une classe différente car leur apparence n'est pas la même que celle des autres barre de navigation
+                sur la maquette, il leur faut donc d'autres caractéristiques css.-->
             </ul>
         </nav>
     </footer>
 
 
-<!-- import pour les icônes des réseaux sociaux, le site indiquait de mettre les imports juste avant la fin du body, j'ai donc
-respecté leur recommandation-->
+<!-- import pour les icônes des réseaux sociaux, le site qui les fourni indiquait de mettre les imports juste avant la fin du body, j'ai donc
+respecté ses recommandations-->
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 

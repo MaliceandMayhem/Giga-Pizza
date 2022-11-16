@@ -15,10 +15,12 @@ body{
     margin: 0%;
     padding: 0%;
 }
+/*Je fais en sorte ici, qu'il n'y ait aucun padding ou margin autour du body de mon site*/
 
 a{
     text-decoration: none;
 }
+/*Ici, je retire les caractéristiques ésthétiques de base des liens sur mon site (sous-lignés et en bleu entre autre)*/
 
 /*image de fond de la bannière*/
 #fond{
@@ -28,7 +30,8 @@ a{
     margin-bottom: 0%; 
 /* l'image est en position relative car il y a des éléments à superposer par dessus, comme la barre de navigation et la bannière
 Elle est également en display block car les prochaines div devront aller en dessous
-Le margin-bottome est à 0 pour éviter les espacements avec la div juste en dessous, les deux doivent être collées*/
+Le margin-bottome est à 0 pour éviter les espacements avec la div juste en dessous, les deux doivent être collées
+et elle doit s'afficher à 100% en largeur sur l'écran grâce au width*/
 }
 
 /*Barre de navigation*/
@@ -44,7 +47,10 @@ Le margin-bottome est à 0 pour éviter les espacements avec la div juste en des
     font-weight: 500;
     text-indent: 20px;
 /*Ma barre de navigation est en position absolue pour pouvoir la placer où je veux sur l'image de fond qui est en position relative,
-c'est à dire, tout en haut à droite*/
+c'est à dire, tout en haut à droite.
+Elle est en position block car les autres éléments doivent aller à la ligne et ne pas partager le même espace.
+Les liens sont séparés par 20 pixels.
+Ma section nav n'a aucun padding ou margin*/
 }
 
 nav li{
@@ -55,14 +61,17 @@ nav li{
 nav li a{
     color: white;
 }
+/*La couleur des liens dans mes nav*/
 
 #menu a:hover{
     color: #3E3A35;
 }
+/*La couleur de mes liens au survol dans la nav principale, en haut du site, c'est le marron de la charte graphique*/
 
 #menu a:active{
     color: #3E3A35;
 }
+/*La couleur du lien de la page active dans la nav principale, en haut du site, c'est le marron de la charte graphique*/
 
 /*éléments de la barre de menu*/
 .barre{
@@ -70,7 +79,8 @@ nav li a{
     padding: 0px;
     font-size: 25px;
     padding-right: 50px;
-}
+} /*J'ai fait en sorte qu'il n'y ait aucun padding et magin sur mes éléments, j'ai réglé la taille de la police et 
+ai ajouté du padding sur la droite pour équilibrer leur position dans la barre.*/
 
 #banniere{
     display: block;
@@ -79,19 +89,21 @@ nav li a{
     top: 250px;
     width: 100%;
     min-height: 300px;
-    /*La position est absolue pour pouvoir placer cet élément où je veux sur l'image de fond*/
+    /*La position est absolue pour pouvoir placer cet élément où je veux sur l'image de fond, la div bannière me permet de créer le fond
+    de couleur jaune sous le titre du site, ce fond doit s'afficher à 100% de largeur sur l'écran grâce au width et sa hauteur minimum est
+    de 300 pixels. Elle est en display block pour éviter les conflits de positionnement avec d'autres éléments.*/
 }
 
 #giga{
     position: absolute;
     bottom: 50px;
     left: 150px;
-    float: left;
     color: white;
     font-family: 'Rubik Mono One', sans-serif;
     font-size: 100px;
     letter-spacing: 5px;
-    /*La position est absolue pour pouvoir placer cet élément où je veux sur l'image de fond*/
+    /*La position est absolue pour pouvoir placer cet élément où je veux sur l'image de fond, la couleur du texte est blanche, 
+    sa police est la Rubik mono one, la taille de la police est de 100 pixels et les lettres sont espacées de 5 pixels.*/
 }
 
 /*"Pizzeria"*/
@@ -99,13 +111,14 @@ h1{
     position: absolute;
     left: 150px;
     top: 90px;
-    float: left;
     color: white;
     text-transform: uppercase;
     font-family: 'Quicksand', sans-serif;
     font-size: 100px;
     letter-spacing: 20px;
-    /*La position est absolue pour pouvoir placer cet élément où je veux sur l'image de fond*/
+    /*La position est absolue pour pouvoir placer cet élément où je veux sur l'image de fond, la couleur du h1 "pizzeria" est blanche
+    Il doit être tout en majuscule grâce au text-transform, sa police est la Quicksand et sa taille de 100 pixels, il y a 20 pixels
+    entre chaque lettre.*/
 }
 
 /*bouton "en savoir plus"*/
@@ -122,14 +135,19 @@ h1{
     padding: 12px 20px;
     border: 2px solid white;
     cursor: pointer;
-    /*La position est absolue pour pouvoir placer le bouton où je veux sur l'image de fond*/
+    /*La position est absolue pour pouvoir placer le bouton où je veux sur l'image de fond, sa couleur de fond est jaune, la couleur du
+    texte est blanche, la police du texte est la Quicksand, le texte est centré, fait 30 pixels en taille et devrait faire 900 en "poids" 
+    c'est à dire qu'il doit être en gras, il y a un padding de 12 pixels en haut et en bas du texte, et de 20 pixels à gauche et à 
+    droite du texte, la bordure fait 2 pixels de large, en trait droit et est blanche.
+    Le curseur doit changer au survol pour indiquer qu'il est cliquable*/
 }
 
 /*animation de clic du bouton*/
 #plus:active{
     transform: translate(0px,5px);
     -webkit-transform: translate(0px,5px);
-}
+} /*Ceci crée une petite animation du bouton qui s'enfonce en cliquant dessus, en vrai il ne fait que descendre de 5 pixels mais 
+cela crée l'illusion d'un enfoncement.*/
 
 
 /*fond noir de la section nouveautés*/
@@ -142,7 +160,10 @@ h1{
     margin: 0%;
     padding-bottom: 80px;
     /*La position de cette div est en relative pour que les éléments à l'intérieur (image + div) puissent être placés où je veux
-    par rapport à cette div là.*/
+    par rapport à cette div là. Elle est en display block car les div principales doivent se suivre "à la ligne", les unes en dessous des autres
+    sa couleur de fond est le noir de la charte graphique, elle doit s'afficher à 100% de la largeur de l'écran, elle fait au moins 400
+    pixels de haut, n'a pas de margin mais à un padding en bas de 80 pixels, la maquette montre que le bas de cette section est plus
+    grand que le haut.*/
 }
 
 /*image de la section nouveautés*/
@@ -152,7 +173,8 @@ h1{
     right: 0px;
     width: 50%;
     height: 300px;
-    /*La position est absolue pour pouvoir placer cette image où je veux sur la div parent*/
+    /*La position est absolue pour pouvoir placer cette image où je veux sur la div parent. Elle fait 50% de la largeur de la div parent
+    et fait 300 pixels de haut.*/
 }
 
 /*titre de la section nouveauté*/
@@ -163,7 +185,9 @@ h1{
     font-size: 25px;
     width: 50%;
     padding-left: 150px;
-}
+} /*Le float left est là pour placer le titre à gauche, la couleur du titre est blanche, sa police est Quicksand, sa taille est de 25
+pixels, le titre fait 50% de la largeur de la div parent, il y a un padding à gauche pour régler la position du titre par rapport au
+bord gauche de l'écran.*/
 
 /* les paragraphes de la section nouveautés*/
 .paranouveau{
@@ -174,7 +198,10 @@ h1{
     font-size: 15px;
     width: 50%;
     padding-left: 150px;
-}
+}/*Le float left est là pour placer les paragraphes à gauche, la couleur du texte est blanche, sa police est Quicksand, sa taille est de 15
+pixels, les paragraphes font 50% de la largeur de la div parent, il y a un padding à gauche pour régler leur position par rapport au
+bord gauche de l'écran. Ils sont en display block pour éviter les soucis de positionnement avec le titre au dessus, ils vont
+automatiquement en dessous grâce à ça.*/
 
 /*section de la section nouveautés*/
 #textenouveau{
@@ -184,7 +211,9 @@ h1{
     top: 50px;
     width: 45%;
     height: 300px;
-    /*La position est absolue pour pouvoir placer cette div où je veux sur la div parent*/
+    /*La position est absolue pour pouvoir placer cette div où je veux sur la div parent, elle me sert à faire le fond jaune du texte,
+    Elle fait 45% de la largeur de l'écran car elle prend légèrement moins de place que l'image en face sur la maquette. Elle est
+    en display block pour éviter les problèmes de positionnement, et elle fait 300 pixels de hauteur.*/
 }
 
 /*les titres des services proposés par le resto*/
@@ -198,7 +227,11 @@ h1{
     width: 25%;
     text-align: left;
     margin-top: 150px;
-}
+}/*Le display des titres est en inline-block car les titres sont sur la même ligne, leur couleur est jaune, leur police est
+la Quicksand, leur taille est de 25 pixels, ils sont en gras, chacun fait 25% de la largeur de l'écran, ils sont alignés à gauche
+car cela permettait de mieux équilibrer leur placement, du moins sur mon écran, il y a une marge de 150 pixels au dessus d'eux pour
+respecter le design de la maquette. */
+
 /*gauche*/
 #format{
     display:inline-block;
@@ -210,7 +243,9 @@ h1{
     text-align: left;
     margin-top: 150px;
     margin-left: 250px;
-}
+}/*Ce titre à une marge à gauche de 250 pixels pour régler le positionnement de tous les titres (vu que celui-là se trouve à 
+l'extrémité et faire en sorte de mieux respecter la maquette et d'être plaisant à voir.*/
+
 /*droite*/
 #restaurant{
     display:inline-block;
@@ -233,7 +268,12 @@ h1{
     text-align: left;
     margin-left: 45px;
     padding-bottom: 100px;
-}
+}/*Le display des paragraphes est en inline-block car les titres sont sur la même ligne, leur couleur est celle du texte de base,
+ leur police est la Quicksand, leur taille est de 16 pixels, chacun fait 22% de la largeur de l'écran, ils sont
+ alignés à gauche car cela permettait de mieux équilibrer leur placement, du moins sur mon écran, il y a une marge de 45 pixels
+ appliquée à ce paragraphe là pour ajuster son positionnement, il y a un padding de 100 pixels en dessous d'eux pour respecter le design 
+ de la maquette. */
+
 /*gauche*/
 #paraservices1{
     display:inline-block;
@@ -243,7 +283,9 @@ h1{
     text-align: left;
     margin-left: 250px;
     padding-bottom: 100px;
-}
+}/*Ce paragraphe à une marge à gauche de 250 pixels pour régler le positionnement de tous les paragraphes (vu que celui-là se trouve à 
+l'extrémité et faire en sorte de mieux respecter la maquette et d'être plaisant à voir.*/
+
 /*droite*/
 #paraservices3{
     display:inline-block;
@@ -253,14 +295,15 @@ h1{
     text-align: left;
     margin-left: 45px;
     padding-bottom: 100px;
-}
+}/*Il y a une marge de 45 pixels appliquée à ce paragraphe là pour ajuster son positionnement*/
 
 /*Section Pizzas*/
 #sectionpizzas{
     background-color: #1e1e1e;
     padding-top: 20px;
     padding-bottom: 150px;
-}
+}/*Cette div a une couleur de fond noire comme sur la charte graphique, et un padding en haut et en bas pour respecter les
+proportions de la maquette.*/
 
 /*titre du menu*/
 #nospizzas{
@@ -269,7 +312,8 @@ h1{
     font-size: 70px;
     margin-left: 20px;
     padding-bottom: 70px;
-}
+}/*Le titre de la section est en Rubik mono one, de couleur blache, d'une taille de 70 pixels, avec une marge à gauche
+pour l'écarter du bord de l'écran et un padding en bas pour créer un écart avec les images.*/
 
 /*images des pizzas au menu*/
 .pizzas{
@@ -277,7 +321,9 @@ h1{
     width: 25%;
     padding-left: 90px;
     
-}
+}/*Le display des images est en inline-block car elles sont alignées, elles sont chacune 25% de la largeur de l'écran et ont un 
+padding à gauche de 90 pixels pour ajuster l'écart entre elles et le bord gauche de l'écran, elle sont bien centrées sur mon écran
+mais ne sont pas responsive par rapport à ce dernier positionnement*/
 
 /*section avec la photo de la devanture, l'adresse, le tel, les réseaux*/
 #infos{
@@ -285,7 +331,7 @@ h1{
     padding-bottom: 150px;
     padding-top: 100px;
     /*La position de cette div est relative pour pouvoir placer les éléments à l'intérieur de cette div où je veux par rapport 
-    à cette div parent*/
+    à cette div parent, elle à un padding en haut et en bas pour respecter les proportions de la maquette.*/
 }
 
 /*image du resto*/
@@ -294,7 +340,9 @@ h1{
     display: inline-block;
     width: 50%;
     margin-left: 100px;
-    /*L'image est en position relative pour ne pas gêner le placement des autres éléments dans la même div*/
+    /*L'image est en position relative pour ne pas gêner le placement des autres éléments dans la même div, elle est en display
+    inline-block car d'autres éléments vont se placer à côté, elle fait 50% de la largeur de la div et a un padding
+    de 100 pixels à gauche pour créer un écart avec le bord gauche de l'écran.*/
 }
 
 /*adresse + téléphone*/
@@ -307,7 +355,9 @@ h1{
     text-align: center;
     font-family: 'Quicksand', sans-serif;
     font-size: 25px;
-    /*La position est absolue pour pouvoir placer ce paragraphe où je veux sur la div parent*/
+    /*La position est absolue pour pouvoir placer ce paragraphe où je veux sur la div parent, il est en display inline block car 
+    il se trouve à côté de l'image, il prend 20% de la largeur de la div, le texte est centré, sa police est la Quicksand avec une taille
+    de 25 pixels.*/
 }
 
 /*section des réseaux sociaux*/
@@ -318,7 +368,9 @@ h1{
     background-color: #EEB41F;
     width: 25%;
     padding-top: 5px;
-    /*La position est absolue pour pouvoir placer cette div où je veux sur la div parent*/
+    /*La position est absolue pour pouvoir placer cette div où je veux sur la div parent, cela me permet de créer le fond jaune
+    de la barre de navigation des réseaux sociaux, elle fait 25% de largeur par rapport à la div parent et contient un padding en 
+    haut pour équilibrer le placement des icônes à l'intérieur.*/
 }
 
 /*logos réseaux sociaux*/
@@ -326,11 +378,12 @@ h1{
     display: inline-block;
     font-size: 40px;
     padding-left: 20px;
-}
+}/*Les icônes sont en inline-block car elles sont toutes alignées les unes avec les autres, elles ont une taille de 40 pixels
+et ont un padding gauche de 20 pixels pour équilibrer leur placement sur la barre.*/
 
 #reseaux a:hover{
     color: #3E3A35;
-}
+}/*Ceci est la couleur de survol des icônes, le marron de la charte graphique.*/
 
 footer{
     background-color: #3E3A35;
@@ -340,12 +393,14 @@ footer{
     padding-top: 5px;
     padding-bottom: 5px;
     letter-spacing: 1px;
-}
+}/*Ceci est la section footer, avec une couleur de fond marron, les textes à l'intérieur sont en Quicksand, de couleur blanche
+ils sont centrés dans cette section, il y a un padding en haut et en bas pour respecter les proportions de la maquette et les lettres des
+textes sont espacées d'un pixel*/
 
 footer a:hover{
     color: #EEB41F;
-}
+}/*Les liens du footer sont jaunes au survol de la souris*/
 
 footer a:active{
     color: #EEB41F;
-}
+}/*le lien de la page active reste jaune.*/
